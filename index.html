@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Manojkumar V – Agency Manager | Sales &amp; Customer Advisor</title>
+<meta name="description" content="Portfolio of Manojkumar V, Agency Manager at ICICI Life Insurance with 5 years of sales experience.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E🤝%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=Figtree:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#E9EDF8; --card:#FFFFFF; --ink:#14183A; --muted:#4A5078; --panel:#1B2150; --on-panel:#EEF0FA;
+  --accent:#F2A71B; --line:#C9D0E8;
+  --display:'Bricolage Grotesque','Segoe UI',system-ui,sans-serif;
+  --body:'Figtree','Segoe UI',system-ui,sans-serif;
+  box-sizing:border-box;
+  padding-top:env(safe-area-inset-top,0px);
+  padding-bottom:env(safe-area-inset-bottom,0px);
+}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){--bg:#0F1230;--card:#181C42;--ink:#EEF0FA;--muted:#A5ABD3;--panel:#232963;--on-panel:#EEF0FA;--accent:#F5B53A;--line:#2C3269}
+}
+:root[data-theme="dark"]{--bg:#0F1230;--card:#181C42;--ink:#EEF0FA;--muted:#A5ABD3;--panel:#232963;--on-panel:#EEF0FA;--accent:#F5B53A;--line:#2C3269}
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:calc(72px + env(safe-area-inset-top,0px))}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 1.05rem/1.65 var(--body);-webkit-font-smoothing:antialiased}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--accent);outline-offset:3px;border-radius:6px}
+.wrap{width:min(1080px,100% - 2.5rem);margin-inline:auto}
+h1,h2,h3{font-family:var(--display);line-height:1.1;margin:0}
+
+/* header */
+header{position:sticky;top:env(safe-area-inset-top,0px);z-index:20;background:color-mix(in srgb,var(--bg) 88%,transparent);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);background:var(--bg);z-index:30}
+.nav{display:flex;align-items:center;justify-content:space-between;height:64px;gap:1rem}
+.logo{font:800 1.25rem var(--display);text-decoration:none}
+.nav ul{display:flex;gap:1.6rem;list-style:none;margin:0;padding:0}
+.nav a{text-decoration:none;font-weight:500;font-size:.95rem;color:var(--muted)}
+.nav a:hover{color:var(--ink)}
+.btn{display:inline-flex;align-items:center;gap:.5rem;padding:.8rem 1.4rem;border-radius:999px;font-weight:600;text-decoration:none;border:2px solid var(--ink);transition:transform .15s,background .15s}
+.btn.primary{background:var(--accent);border-color:var(--accent);color:#14183A}
+.btn:hover{transform:translateY(-2px)}
+@media(max-width:720px){.nav ul{display:none}}
+
+/* hero */
+.hero{padding:clamp(3rem,8vw,6.5rem) 0 clamp(2.5rem,6vw,4.5rem)}
+.hero .wrap{display:grid;grid-template-columns:1.5fr 1fr;gap:3rem;align-items:center}
+.hero h1{font-size:clamp(3rem,9vw,6.4rem);font-weight:800;letter-spacing:-.035em;animation:rise .9s cubic-bezier(.2,.7,.2,1) both}
+.hero .role{font:600 1.25rem var(--display);margin:1.2rem 0 .6rem;color:var(--muted)}
+.hero p.lead{max-width:34rem;margin:0 0 2rem}
+.cta{display:flex;flex-wrap:wrap;gap:.8rem}
+.portrait{position:relative;justify-self:center;width:min(320px,70vw);aspect-ratio:1;border-radius:50%;background:var(--panel);display:grid;place-items:center;overflow:hidden;box-shadow:0 0 0 10px var(--bg),0 0 0 13px var(--accent)}
+.portrait img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.portrait span{font:800 6rem var(--display);color:var(--accent);letter-spacing:-.04em}
+@keyframes rise{from{opacity:0;transform:translateY(24px)}to{opacity:1;transform:none}}
+@media(max-width:820px){.hero .wrap{grid-template-columns:1fr}.portrait{order:-1;width:200px}.portrait span{font-size:4rem}}
+
+/* awards strip */
+.awards{background:var(--panel);color:var(--on-panel);padding:2rem 0}
+.awards ul{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(3,1fr);gap:1.5rem}
+.awards li{display:flex;gap:1rem;align-items:center}
+.awards svg{flex:none;width:44px;height:44px;color:var(--accent)}
+.awards strong{display:block;font:700 1.15rem var(--display)}
+.awards small{opacity:.8;font-size:.92rem}
+@media(max-width:720px){.awards ul{grid-template-columns:1fr}}
+
+/* sections */
+section{padding:clamp(3.5rem,8vw,6rem) 0}
+h2{font-size:clamp(2rem,5vw,3.2rem);font-weight:800;letter-spacing:-.025em;margin-bottom:2rem}
+.about{display:grid;grid-template-columns:1fr 1fr;gap:3rem}
+.about p{margin:0 0 1rem;max-width:34rem}
+.facts{display:grid;gap:.9rem;align-content:start;margin:0}
+.facts div{display:flex;justify-content:space-between;gap:1rem;padding-bottom:.9rem;border-bottom:1px solid var(--line)}
+.facts dt{color:var(--muted)} .facts dd{margin:0;font-weight:600;text-align:right}
+@media(max-width:820px){.about{grid-template-columns:1fr;gap:2rem}}
+
+/* timeline */
+.timeline{position:relative;margin:0;padding:0 0 0 2rem;list-style:none;border-left:3px solid var(--accent)}
+.timeline li{position:relative;background:var(--card);border-radius:18px;padding:1.6rem 1.8rem;margin-bottom:1.5rem}
+.timeline li::before{content:"";position:absolute;left:calc(-2rem - 10px);top:2rem;width:17px;height:17px;border-radius:50%;background:var(--bg);border:4px solid var(--accent)}
+.timeline time{font-weight:600;color:var(--muted);font-size:.95rem}
+.timeline h3{font-size:1.5rem;margin:.3rem 0 .15rem}
+.timeline .org{font-weight:600;margin:0 0 .8rem}
+.timeline p{margin:0;max-width:44rem}
+
+/* skills */
+.skillgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.2rem}
+.skill{background:var(--card);border-radius:18px;padding:1.6rem}
+.skill:nth-child(2){background:var(--panel);color:var(--on-panel)}
+.skill h3{font-size:1.3rem;margin-bottom:.5rem}
+.skill p{margin:0;font-size:.98rem;opacity:.9}
+@media(max-width:820px){.skillgrid{grid-template-columns:1fr}}
+.meta{display:grid;grid-template-columns:1fr 1fr;gap:3rem;margin-top:4rem}
+.meta h3{font-size:1.5rem;margin-bottom:1rem}
+.meta p{margin:0 0 .3rem}
+.chips{display:flex;gap:.6rem;flex-wrap:wrap}
+.chip{padding:.45rem 1.1rem;border-radius:999px;border:2px solid var(--ink);font-weight:600}
+@media(max-width:820px){.meta{grid-template-columns:1fr;gap:2rem}}
+
+/* contact */
+.contact{background:var(--panel);color:var(--on-panel)}
+.contact h2{max-width:14ch}
+.contact .row{display:flex;flex-wrap:wrap;gap:1rem;margin-top:2rem}
+.contact .btn{border-color:var(--on-panel)}
+.contact .btn.primary{border-color:var(--accent)}
+.contact p{max-width:34rem;margin:0}
+footer{padding:1.6rem 0;color:var(--muted);font-size:.92rem}
+footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:.5rem}
+
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important;scroll-behavior:auto!important}}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap nav">
+    <a class="logo" href="#top" aria-label="Manojkumar V, home">Manojkumar V</a>
+    <nav aria-label="Main">
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+    <a class="btn primary" href="#contact">Get in touch</a>
+  </div>
+</header>
+
+<main id="top">
+  <div class="hero">
+    <div class="wrap">
+      <div>
+        <h1>Manojkumar V</h1>
+        <p class="role">Agency Manager at ICICI Life Insurance</p>
+        <p class="lead">I help families understand what they need and choose savings plans that fit. Five years in sales have taught me that people buy from advisors who listen first.</p>
+        <div class="cta">
+          <a class="btn primary" href="tel:+919363466400">Call +91 93634 66400</a>
+          <a class="btn" href="#experience">See my experience</a>
+        </div>
+      </div>
+      <!-- Add your photo: save it as photo.jpg next to this file. Until then, initials show. -->
+      <div class="portrait" role="img" aria-label="Portrait of Manojkumar V">
+        <span aria-hidden="true">MV</span>
+        <img src="photo.jpg" alt="" onerror="this.remove()">
+      </div>
+    </div>
+  </div>
+
+  <div class="awards">
+    <div class="wrap">
+      <ul>
+        <li>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="9" r="6"/><path d="M8.5 14 7 22l5-3 5 3-1.5-8"/></svg>
+          <div><strong>Customer Champion</strong><small>Reliance Projects &amp; Property Management</small></div>
+        </li>
+        <li>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 17l6-6 4 4 8-8"/><path d="M15 7h6v6"/></svg>
+          <div><strong>Sales Maximizer</strong><small>Reliance Projects &amp; Property Management</small></div>
+        </li>
+        <li>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3l2.7 5.6 6.1.9-4.4 4.3 1 6.1L12 17l-5.4 2.9 1-6.1L3.2 9.5l6.1-.9z"/></svg>
+          <div><strong>Support Star of the Month</strong><small>Customer support recognition</small></div>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <section id="about">
+    <div class="wrap">
+      <h2>About me</h2>
+      <div class="about">
+        <div>
+          <p>I started in electronic sales and spent four years with Reliance Projects &amp; Property Management Services, where I earned recognition for both closing deals and looking after customers.</p>
+          <p>Today I work as an Agency Manager at ICICI Life Insurance. I answer policy questions, work out what each customer needs, and suggest savings plans that match their goals.</p>
+          <p>I speak Tamil and Kannada, so I can explain things clearly in the language people are most comfortable with.</p>
+        </div>
+        <dl class="facts">
+          <div><dt>Role</dt><dd>Agency Manager</dd></div>
+          <div><dt>Experience</dt><dd>5 years</dd></div>
+          <div><dt>Based in</dt><dd>Dharmapuri, India</dd></div>
+          <div><dt>Languages</dt><dd>Tamil, Kannada</dd></div>
+          <div><dt>Education</dt><dd>B.Sc, Periyar University</dd></div>
+        </dl>
+      </div>
+    </div>
+  </section>
+
+  <section id="experience" style="padding-top:0">
+    <div class="wrap">
+      <h2>Experience</h2>
+      <ol class="timeline">
+        <li>
+          <time datetime="2026-07">Jul 2026 – Present</time>
+          <h3>Agency Manager</h3>
+          <p class="org">ICICI Life Insurance Limited</p>
+          <p>Advising customers on life insurance, handling policy enquiries on behalf of the company, understanding each customer's requirements and recommending suitable savings plans.</p>
+        </li>
+        <li>
+          <time datetime="2021-12">Dec 2021 – Jul 2026</time>
+          <h3>Sales Executive</h3>
+          <p class="org">Reliance Projects &amp; Property Management Services</p>
+          <p>Sold electronic products and served customers day to day. Recognised with the Sales Maximizer and Customer Champion awards, and named Support Star of the Month.</p>
+        </li>
+        <li>
+          <time datetime="2020">2020</time>
+          <h3>B.Sc</h3>
+          <p class="org">Periyar University</p>
+          <p>Completed my bachelor's degree before starting my sales career.</p>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <section id="skills" style="padding-top:0">
+    <div class="wrap">
+      <h2>What I do well</h2>
+      <div class="skillgrid">
+        <div class="skill"><h3>Sales management</h3><p>Finding the right customers, following up consistently and closing with trust rather than pressure.</p></div>
+        <div class="skill"><h3>Sales and marketing</h3><p>Explaining products in plain words so customers can compare options and decide with confidence.</p></div>
+        <div class="skill"><h3>Customer advisory</h3><p>Listening to needs, answering policy questions and recommending plans that suit the customer's goals.</p></div>
+      </div>
+      <div class="meta">
+        <div>
+          <h3>Languages</h3>
+          <div class="chips"><span class="chip">Tamil</span><span class="chip">Kannada</span></div>
+        </div>
+        <div>
+          <h3>Education</h3>
+          <p><strong>B.Sc, 2020</strong></p>
+          <p>Periyar University</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="contact">
+    <div class="wrap">
+      <h2>Let's talk about your plans</h2>
+      <p>Whether you want to compare savings plans or have a question about your policy, reach out and I'll get back to you.</p>
+      <div class="row">
+        <a class="btn primary" href="tel:+919363466400">Call +91 93634 66400</a>
+        <a class="btn" href="https://wa.me/919363466400" rel="noopener">Message on WhatsApp</a>
+        <a class="btn" href="mailto:manovasu9988@gmail.com">manovasu9988@gmail.com</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <span>© 2026 Manojkumar V</span>
+    <span>Dharmapuri, Tamil Nadu</span>
+  </div>
+</footer>
+
+</body>
+</html>
